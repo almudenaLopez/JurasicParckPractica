@@ -42,7 +42,22 @@ public class GestorParque {
         parque.getDinosaurios().remove(dinosaurio);
         return true;
     }
+    // CRUD dinosaurio
+    public boolean modificarDinosaurio(int id, String nombre, String especie, double altura, double peso, String estado) {
+        Dinosaurio dinosaurio = buscarDinosaurioPorId(id);
 
+        if (dinosaurio == null) {
+            return false;
+        }
+
+        dinosaurio.setNombre(nombre);
+        dinosaurio.setEspecie(especie);
+        dinosaurio.setAltura(altura);
+        dinosaurio.setPeso(peso);
+        dinosaurio.setEstado(estado);
+
+        return true;
+    }
     // Incidentes
 
     public void agregarIncidente(Incidente incidente) {
@@ -70,6 +85,21 @@ public class GestorParque {
         }
 
         parque.getIncidentes().remove(incidente);
+        return true;
+    }
+    //CRUD inciente
+    public boolean modificarIncidente(int id, String descripcion,
+                                      java.time.LocalDate fecha, String nivelGravedad) {
+        Incidente incidente = buscarIncidentePorId(id);
+
+        if (incidente == null) {
+            return false;
+        }
+
+        incidente.setDescripcion(descripcion);
+        incidente.setFecha(fecha);
+        incidente.setNivelGravedad(nivelGravedad);
+
         return true;
     }
 }
