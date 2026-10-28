@@ -1,5 +1,5 @@
 package parquejurasico;
-
+import java.io.IOException;
 import java.time.LocalDate;
 
 public class Main {
@@ -42,6 +42,18 @@ public class Main {
         System.out.println("¿Se eliminó? " + incidenteEliminado);
         System.out.println("Búsqueda después de eliminar: "
                 + gestor.buscarIncidentePorId(1));
+//Persistencia texto (TXT)
+        PersistenciaTexto persistencia = new PersistenciaTexto();
 
+        try {
+            persistencia.registrarOperacion("Simulación iniciada");
+            persistencia.registrarOperacion("Dinosaurio añadido: id=" + dinosaurio.getId() + ", nombre=" + dinosaurio.getNombre());
+            persistencia.registrarOperacion("Incidente registrado: id=" + incidente.getId() + ", descripción=" + incidente.getDescripcion());
+
+            System.out.println("Operaciones guardadas en datos/operaciones.txt");
+
+        } catch (IOException e) {
+            System.out.println("No se pudieron guardar las operaciones: " + e.getMessage());
+        }
             }
 }
