@@ -55,7 +55,7 @@ public class Main {
         } catch (IOException e) {
             System.out.println("No se pudieron guardar las operaciones: " + e.getMessage());
         }
-        //Persistencia Sensores (binario)
+        //Persistencia Sensores (binario)(.dat)
         PersistenciaSensores sensores = new PersistenciaSensores();
 
         try {
@@ -77,6 +77,15 @@ public class Main {
 
         } catch (IOException e) {
             System.out.println("Error al trabajar con sensores: " + e.getMessage());
+        }
+        //persistencia Estado
+        PersistenciaEstado persistenciaEstado = new PersistenciaEstado();
+
+        try {
+            persistenciaEstado.guardarEstado();
+            System.out.println("Estado guardado en datos/estado.json");
+        } catch (IOException e) {
+            System.out.println("No se pudo guardar el estado: " + e.getMessage());
         }
             }
 }
