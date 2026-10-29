@@ -55,5 +55,28 @@ public class Main {
         } catch (IOException e) {
             System.out.println("No se pudieron guardar las operaciones: " + e.getMessage());
         }
+        //Persistencia Sensores (binario)
+        PersistenciaSensores sensores = new PersistenciaSensores();
+
+        try {
+            // Añadir dos registros
+            sensores.agregarRegistro(1, 22.5, 65.0);
+            sensores.agregarRegistro(2, 24.0, 70.0);
+
+            // Leer directamente el sensor 1
+            System.out.println("Lectura directa:");
+            System.out.println(sensores.leerRegistro(1));
+
+            // Modificar directamente el sensor 1
+            boolean modificado = sensores.modificarRegistro(1, 28.0, 80.0);
+            System.out.println("¿Se modificó el sensor 1? " + modificado);
+
+            // Mostrar los registros para comprobar el cambio
+            System.out.println("Registros después de modificar:");
+            sensores.listarRegistros();
+
+        } catch (IOException e) {
+            System.out.println("Error al trabajar con sensores: " + e.getMessage());
+        }
             }
 }
