@@ -83,8 +83,8 @@ public class Main {
 
         try {
             persistenciaEstado.guardarEstado();
-            System.out.println("Estado guardado en datos/estado.json");
-        } catch (IOException e) {
+            System.out.println("Estado guardado en datos/parque.xml");
+        } catch (Exception e) {
             System.out.println("No se pudo guardar el estado: " + e.getMessage());
         }
             }
