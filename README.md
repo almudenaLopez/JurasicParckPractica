@@ -17,14 +17,15 @@ Son unicos y no son reutilizables
 1. RECINTO : "REC-01"
 2. DINOSAURIO: "DIN-01"
 3. PUERTA:"PUE-01"
-4. SENSOR:"SEN-01"
+4. SENSOR 1:"SEN-01"
+5. SENSOR 2: "SEN-02"
 5. VEHICULO :"VEH-01"
 6. EMPLEADO :"EMP-01"
 7. SUCESO:"EVT-00000022"
 
 #Ficheros de datos 
-."operaciones.txt": sucesos del parque , incluye los identificadores implicados
-."sensores.dat": mediciones de sensores relacionados con los sucesos
-."parque.json": elementos del parque, sus identificadores, relaciones y estado actual 
+."operaciones.txt": sucesos del parque , historial de operaaciones
+."sensores.dat":registros binarios de tamaño fijo. Cada registro contiene un identificador numérico, una temperatura y un nivel. El ID numérico "1" corresponde a "SEN-01" y el "2" a "SEN-02"
+."parque.xml": estructura del parque, sus elementos, identificadores, relaciones y estado actual
 
 El analizador usara los ficheross para generar un informe y guardar los datos que son relevantes 
