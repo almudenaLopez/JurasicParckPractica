@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <File name="EVIDENCIA_POR_EJECUCION"
+              fileName="logs/evidencias/ejecucion_${date:dd-MM-yyyy_HH-mm-ss}.log"
+              append="false">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger - %msg%n"/>
+        </File>
+        <RollingFile name="RUNTIME"
+                     fileName="logs/runtime/aplicacion.log"
+                     filePattern="logs/runtime/aplicacion-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger - %msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="4 KB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="5">
+                <Delete basePath="logs/runtime" maxDepth="1">
+                    <IfFileName glob="aplicacion-*.log.gz"/>
+                    <IfAccumulatedFileCount exceeds="5"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+        <Console name="CONSOLA" target="SYSTEM_OUT">
+            <PatternLayout pattern="%level %msg%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="EVIDENCIA_POR_EJECUCION"/>
+            <AppenderRef ref="RUNTIME"/>
+            <AppenderRef ref="CONSOLA"/>
+        </Root>
+    </Loggers>
+</Configuration>

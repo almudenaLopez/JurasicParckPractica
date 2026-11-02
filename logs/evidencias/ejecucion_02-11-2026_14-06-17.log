@@ -1,0 +1,2 @@
+2026-11-02 14:06:18.177 INFO  parquejurasico.SimuladorParque - Suceso EVT-1793624778019 registrado: FUGA_DINOSAURIO
+2026-11-02 14:06:18.185 ERROR parquejurasico.SimuladorParque - Evento crítico EVT-1793624778019: Situación crítica detectada. Evidencias guardadas para EVT-1793624778019

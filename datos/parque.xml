@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<parque idSuceso="EVT-1793624778019" nombre="Jurassic Park">
+  <recintos>
+    <recinto estado="OPERATIVO" id="REC-01" nombre="Recinto de velociraptores">
+      <dinosaurios>
+        <dinosaurio especie="Velociraptor" estado="FUERA_DEL_RECINTO" id="DIN-01" nombre="Blue"/>
+      </dinosaurios>
+      <puertas>
+        <puerta estado="CERRADA" id="PUE-01"/>
+      </puertas>
+      <sensores>
+        <sensor estado="OPERATIVO" id="SEN-01" idRegistroBinario="1" tipo="TEMPERATURA"/>
+        <sensor estado="OPERATIVO" id="SEN-02" idRegistroBinario="2" tipo="NIVEL_ENERGETICO"/>
+        <sensor estado="OPERATIVO" id="SEN-03" idRegistroBinario="3" tipo="TEMPERATURA_MOTOR_PUERTA"/>
+        <sensor estado="SIN_SENAL" id="SEN-04" idRegistroBinario="4" tipo="CONTENCION_DINOSAURIO"/>
+        <sensor estado="OPERATIVO" id="SEN-05" idRegistroBinario="5" tipo="CONTROL_ACCESO"/>
+        <sensor estado="OPERATIVO" id="SEN-06" idRegistroBinario="6" tipo="DIAGNOSTICO_VEHICULO"/>
+      </sensores>
+    </recinto>
+  </recintos>
+  <vehiculos>
+    <vehiculo estado="OPERATIVO" id="VEH-01"/>
+  </vehiculos>
+  <personal>
+    <empleado estado="ACTIVO" id="EMP-01" zonaAutorizada="REC-01"/>
+  </personal>
+</parque>

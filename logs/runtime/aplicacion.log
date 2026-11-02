@@ -1,0 +1,14 @@
+2026-11-02 13:58:28.384 INFO  parquejurasico.AnalizadorForense - Análisis PUERTA_BLOQUEADA: 1 registros binarios relevantes
+2026-11-02 13:58:28.512 INFO  parquejurasico.SimuladorParque - Suceso EVT-ACCESO_NO_AUTORIZADO registrado: ACCESO_NO_AUTORIZADO
+2026-11-02 13:58:28.575 INFO  parquejurasico.AnalizadorForense - Análisis ACCESO_NO_AUTORIZADO: 1 registros binarios relevantes
+2026-11-02 13:58:41.381 INFO  parquejurasico.SimuladorParque - Suceso EVT-1793624321203 registrado: FUGA_DINOSAURIO
+2026-11-02 13:58:41.390 ERROR parquejurasico.SimuladorParque - Evento crítico EVT-1793624321203: Situación crítica detectada. Evidencias guardadas para EVT-1793624321203
+2026-11-02 13:58:43.651 INFO  parquejurasico.AnalizadorForense - Análisis FUGA_DINOSAURIO: 1 registros binarios relevantes
+2026-11-02 14:02:58.559 INFO  parquejurasico.SimuladorParque - Ciclo normal completado sin incidentes
+2026-11-02 14:03:25.214 INFO  parquejurasico.SimuladorParque - Suceso EVT-1793624605044 registrado: FUGA_DINOSAURIO
+2026-11-02 14:03:25.222 ERROR parquejurasico.SimuladorParque - Evento crítico EVT-1793624605044: Situación crítica detectada. Evidencias guardadas para EVT-1793624605044
+2026-11-02 14:04:45.446 INFO  parquejurasico.SimuladorParque - Suceso EVT-1793624685244 registrado: FUGA_DINOSAURIO
+2026-11-02 14:04:45.452 ERROR parquejurasico.SimuladorParque - Evento crítico EVT-1793624685244: Situación crítica detectada. Evidencias guardadas para EVT-1793624685244
+2026-11-02 14:06:18.177 INFO  parquejurasico.SimuladorParque - Suceso EVT-1793624778019 registrado: FUGA_DINOSAURIO
+2026-11-02 14:06:18.185 ERROR parquejurasico.SimuladorParque - Evento crítico EVT-1793624778019: Situación crítica detectada. Evidencias guardadas para EVT-1793624778019
+2026-11-02 20:19:34.594 INFO  parquejurasico.AnalizadorForense - Análisis FUGA_DINOSAURIO: 1 registros binarios relevantes

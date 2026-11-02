@@ -1,0 +1,36 @@
+2026-10-28T21:08:00.1560099 | Simulación iniciada
+2026-10-28T21:08:00.1633811 | Dinosaurio añadido: id=1, nombre=Blue
+2026-10-28T21:08:00.1644963 | Incidente registrado: id=1, descripción=Fallo de seguridad en el sector norte
+2026-10-28T21:08:38.1987058 | Simulación iniciada
+2026-10-28T21:08:38.2044779 | Dinosaurio añadido: id=1, nombre=Blue
+2026-10-28T21:08:38.2054742 | Incidente registrado: id=1, descripción=Fallo de seguridad en el sector norte
+2026-10-28T21:21:17.2133048 | Simulación iniciada
+2026-10-28T21:21:17.2178309 | Dinosaurio añadido: id=1, nombre=Blue
+2026-10-28T21:21:17.2188267 | Incidente registrado: id=1, descripción=Fallo de seguridad en el sector norte
+2026-10-29T09:50:24.3920698 | Simulación iniciada
+2026-10-29T09:50:24.4003606 | Dinosaurio añadido: id=1, nombre=Blue
+2026-10-29T09:50:24.4013664 | Incidente registrado: id=1, descripción=Fallo de seguridad en el sector norte
+2026-11-01T15:57:10.6140879 | Simulación iniciada
+2026-11-01T15:57:10.623097 | Dinosaurio añadido: id=1, nombre=Blue
+2026-11-01T15:57:10.6250968 | Incidente registrado: id=1, descripción=Fallo de seguridad en el sector norte
+2026-11-01T15:57:16.0262724 | Simulación iniciada
+2026-11-01T15:57:16.031796 | Dinosaurio añadido: id=1, nombre=Blue
+2026-11-01T15:57:16.0327947 | Incidente registrado: id=1, descripción=Fallo de seguridad en el sector norte
+2026-11-01T15:59:24.2103093 | Simulación iniciada
+2026-11-01T15:59:24.216311 | Dinosaurio añadido: id=1, nombre=Blue
+2026-11-01T15:59:24.2183092 | Incidente registrado: id=1, descripción=Fallo de seguridad en el sector norte
+2026-11-01T16:08:14.8887112 | Simulación iniciada
+2026-11-01T16:08:14.8957118 | Dinosaurio añadido: id=1, nombre=Blue
+2026-11-01T16:08:14.8967105 | Incidente registrado: id=1, descripción=Fallo de seguridad en el sector norte
+2026-11-01T16:17:46.1897456 | Simulación iniciada
+2026-11-01T16:17:46.1957439 | Dinosaurio añadido: id=1, nombre=Blue
+2026-11-01T16:17:46.1972522 | Incidente registrado: id=1, descripción=Fallo de seguridad en el sector norte
+2026-11-02T12:38:29.564635 | EVT-1793619509472 | REC-01 | SEN-02 detecta una caída del nivel energético
+2026-11-02T12:43:00.3648775 | EVT-1793619780310 | REC-01 | SEN-02 detecta una caída del nivel energético
+2026-11-02T12:43:07.0025246 | EVT-1793619786952 | REC-01 | SEN-02 detecta una caída del nivel energético
+2026-11-02T13:51:23.0935009 | EVT-1793623883042 | REC-01 | Se pierde la señal de contención de DIN-01 y deja de detectarse en REC-01
+2026-11-02T13:58:41.2480021 | EVT-1793624321203 | REC-01 | Se pierde la señal de contención de DIN-01 y deja de detectarse en REC-01
+2026-11-02T14:02:58.4296815 | CICLO-NORMAL | REC-01 | Operación normal; sensores dentro de rango
+2026-11-02T14:03:25.0920227 | EVT-1793624605044 | REC-01 | Se pierde la señal de contención de DIN-01 y deja de detectarse en REC-01
+2026-11-02T14:04:45.3010662 | EVT-1793624685244 | REC-01 | Se pierde la señal de contención de DIN-01 y deja de detectarse en REC-01
+2026-11-02T14:06:18.0583388 | EVT-1793624778019 | REC-01 | Se pierde la señal de contención de DIN-01 y deja de detectarse en REC-01

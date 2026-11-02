@@ -1,0 +1,8 @@
+INFORME FORENSE DEL PARQUE JURASSIC PARK
+Identificador del suceso: EVT-1793624778019
+Incidente identificado: FUGA_DINOSAURIO
+Efectos detectados: DIN-01 está fuera del recinto y se perdió la señal de contención.
+Conclusión: El dinosaurio ha abandonado su zona de seguridad y existe riesgo para el personal.
+Evidencia TXT: 2026-11-02T14:06:18.0583388 | EVT-1793624778019 | REC-01 | Se pierde la señal de contención de DIN-01 y deja de detectarse en REC-01
+Registros BIN relevantes: 1
+Elementos XML relacionados: [4]
