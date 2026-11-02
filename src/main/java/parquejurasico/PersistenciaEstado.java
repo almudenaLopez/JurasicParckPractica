@@ -17,7 +17,15 @@ import java.nio.file.Paths;
 public class PersistenciaEstado {
     private final Path archivo = Paths.get("datos", "parque.xml");
 
+
+    // Guarda el estado normal para que Main pueda seguir usándolo.
     public void guardarEstado() throws Exception {
+        guardarEstado(null, null);
+    }
+
+    // Guarda el estado del parque después de un incidente.
+    public void guardarEstado(TipoIncidente incidente, String idSuceso)
+            throws Exception {
         Files.createDirectories(archivo.getParent());
 
         Document documento = DocumentBuilderFactory
@@ -27,16 +35,24 @@ public class PersistenciaEstado {
 
         Element parque = documento.createElement("parque");
         parque.setAttribute("nombre", "Jurassic Park");
+
+        if (idSuceso != null) {
+            parque.setAttribute("idSuceso", idSuceso);
+        }
+
         documento.appendChild(parque);
 
         Element recintos = documento.createElement("recintos");
         parque.appendChild(recintos);
 
+        boolean falloElectrico =
+                incidente == TipoIncidente.FALLO_ELECTRICO;
+
         Element recinto = agregarElemento(
                 documento, recintos, "recinto",
                 "id", "REC-01",
                 "nombre", "Recinto de velociraptores",
-                "estado", "OPERATIVO"
+                "estado", falloElectrico ? "EMERGENCIA" : "OPERATIVO"
         );
 
         Element dinosaurios = documento.createElement("dinosaurios");
@@ -73,8 +89,8 @@ public class PersistenciaEstado {
         agregarElemento(
                 documento, sensores, "sensor",
                 "id", "SEN-02",
-                "tipo", "NIVEL",
-                "estado", "OPERATIVO",
+                "tipo", "NIVEL_ENERGETICO",
+                "estado", falloElectrico ? "SIN_TENSION" : "OPERATIVO",
                 "idRegistroBinario", "2"
         );
 
